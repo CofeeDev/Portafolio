@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--27856-->
+
+<head>
+    <link rel="icon" href="Favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+    <title>DaniCofee</title>
+</head>
+
+<body>
+    <!---------------Header-------------->
+    <div class="Header">
+        <img src="Img/Code.svg" class="Draw" data-aos="fade-left">
+        <div class="Nav-bar">
+            <div class="Logo">
+                <h1>Dani<span>Cofee</span></h1>
+            </div>
+            <div class="Nav-Link" id="Nav-Link">
+                <div class="Close">
+                    <i class="fas fa-window-close " oneclick="closeMenu()"></i>
+                </div>
+                <ul>
+                    <a href="#Home">
+                        <li>Home</li>
+                    </a>
+                    <a href="#About">
+                        <li>About me</li>
+                    </a>
+                    <a href="#Services">
+                        <li>Services</li>
+                    </a>
+                    <a href="#Skill">
+                        <li>Skill</li>
+                    </a>
+                    <a href="#Offer">
+                        <li>My Offert</li>
+                    </a>
+                    <a href="#Contact">
+                        <li>Contact me</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="bars">
+                <i class="fas fa-bars " oneclick="showMenu()"></i>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------->
+    <!---------------Landing Page-------------->
+    <div class="Landing-Page" id="Home">
+        <div class="Home" data-aos="fade-right">
+            <h1 Class="HI">Hi, I'am <span>DaniCofee</span> Web Designer & Web Developer</h1>
+            <a href="#" class="Button">Contact</a>
+        </div>
+        <div class="Social-Icon">
+            <a href="https://twitter.com/CofeeDev" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://github.com/DaniCofee" target="_blank">
+                <i class="fab fa-github-square"></i>
+            </a>
+        </div>
+    </div>
+    <!-------------------------------->
+    <!---------------Acerca de mi-------------->
+    <div class="About" id="About">
+        <img src="Img/Design.svg" data-aos="fade-right">
+        <h1 class="Title-About" data-aos="fade-down">Acerca de mi</h1>
+        <div class="Description">
+            <h2 data-aos="fade-right">I'm Dani<span>Cofee</span></h2>
+            <p data-aos="fade-left">I am a designer and web developer with multiple skills, I have a lot of experience creating websites with CSS3, HTML5, Bostrap, Javascript etc ... I basically do everything that has to do with the client side: Design the website and the UI / UX , Develop it, Libraries and framework's ...</p>
+        </div>
+    </div>
+    <!-------------------------------->
+    <!---------------Servicios-------------->
+    <div class="Services" id="Services">
+        <h1 class="Title-Services" data-aos="fade-down">Servicios</h1>
+        <div class='Content-Card'>
+            <div class='card'>
+                <div class='card__top'>
+                    <img src="Img/Research.svg" Class="Icon-Image">
+                    <h1>Investigation</h1>
+                </div>
+                <div class='card__bottom'>
+                    <p>Fully understand the client's topic and develop knowledge related to it, becoming intimately familiar with the topic. Determine methods to address specific customer needs and requirements.</p>
+                </div>
+            </div>
+            <div class='card bd-grid'>
+                <div class='card__top'>
+                    <img src="Img/Design.svg" Class="Icon-Image">
+                    <h1>Design</h1>
+                </div>
+                <div class='card__bottom'>
+                    <p> Deceptively viewed as the superficial appearance of a product, design actually encompasses much more. It is a multifunctional process that includes market research, technical research, concept design and prototype mockup. </p>
+                </div>
+            </div>
+            <div class='card'>
+                <div class='card__top'>
+                    <img src="Img/Code.svg" Class="Icon-Image">
+                    <h1>Develop</h1>
+                </div>
+                <div class='card__bottom'>
+                    <p> Findings from the research and design phases are used for the production of specific products, including materials, systems, and methods. Engineer who uses research and designs to produce commercial products for the client. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------->
+    <!---------------Skill-------------->
+    <div class="Skill" id="Skill">
+        <h1 class="Title" data-aos="fade-down">Habilidades</h1>
+        <div class="ImgSkill">
+            <img src="Img/Responsive.svg" class="Img-Skill" data-aos="fade-left">
+            <h1 class="Title-Skill" data-aos="fade-up">Reponsive</h1>
+            <p class="Text-Skill" data-aos="fade-left">
+                All my websites are fully Responsive,
+                so you can be sure
+                that your site is
+                will look great on all kinds of device.</p>
+        </div>
+        <div class="Skill-Bar" data-aos="fade-right">
+            <div class="skillhtml">
+                <i class="fab fa-html5" class="Icon-Html" id="Icon"></i>
+                <div class="skill-name">HTML5</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="95"></div>
+                </div>
+            </div>
+            <div class="skillcss">
+                <i class="fab fa-css3-alt" id="Icon"></i>
+                <div class="skill-name">CSS3</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="90"></div>
+                </div>
+            </div>
+            <div class="skilljs">
+                <i class="fab fa-js" id="Icon"></i>
+                <div class="skill-name">Javascript</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="75"></div>
+                </div>
+            </div>
+            <div class="skillui">
+                <i class="fas fa-paint-brush" id="Icon"></i>
+                <div class="skill-name">UI/UX</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="85"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------- My Offer -------------->
+    <div class="Offer" id="Offer">
+        <h1 class="Title" data-aos="fade-down">My Offer and Reasons for hiring me</h1>
+        <p class="Text-Left" data-aos="fade-left">
+
+            I have developed and launched multiple projects from scratch, leading the development of their front-end code bases.
+            </br>
+            </br>
+            My current toolset includes:
+            Gravit Designer, HTML5, CSS3, Boostrap, Javascript, jQuery among other Libraries and Frameworks.
+            </br>
+            </br>
+            I can help you in your project with:
+            </br>
+            -Check a good UI / UX design,
+            </br>
+            -Develop Front-End,
+            </br>
+            -End your website with Dynamism,
+            </br>
+            -Verify that your website is adaptable to all devices,
+            </br>
+            -Lead, launch and monitor the project.
+            </br>
+            </br>
+            My current experience and skills in Front-End include:
+            </br>
+            </br>
+            TypeScript / JavaScript main development,
+            bootstraping, refactoring, structure improvement,
+            reliability, build configuration;
+            full integration of Front-End development,
+            code minifications,
+            compatibility with multiple environments,
+            automated accessibility tests,
+            good sense of design and UX. </p>
+        <p class="Text-Right" data-aos="fade-right">
+            During my time I have created and published multiple websites.
+            </br>
+            </br>
+            So not only have I hard-coded their Front-End databases, but I also often had to worry about
+            other things needed in a successful web application project:
+            </br>
+            </br>
+            -good planning of the user interface and think about how it affects the UX
+            </br>
+            -coherence in design and typography
+            </br>
+            -launch, deploy and monitor the application after launch
+            </br>
+            -recruit, recruit and mentor team members
+            </br>
+            </br>
+            In cases where you already have an existing team, but would still need help, contact me as well. I'll fit in very quickly. </p>
+    </div>
+    <!-------------------------------->
+    <!-------------------------------->
+    <!---------------Contact-------------->
+    <img src="Img/Contact.svg" class="Contact-Img" data-aos="fade-left">
+    <div class="Contact" id="Contact">
+        <div class="contact-form">
+            <h1 class="Title">Contact me</h1>
+            <form method="post" action="Send.php">
+                <div class="txtb">
+                    <label>Name :</label>
+                    <input type="text" name="Name" value="" required="required" placeholder="Enter Your Name">
+                </div>
+                <div class="txtb">
+                    <label>Email :</label>
+                    <input type="email" name="Email" value="" required="required" placeholder="Enter Your Email">
+                </div>
+                <div class="txtb">
+                    <label>Mensaje :</label>
+                    <input name="Msj" value="" required="required" <textarea></textarea>
+                </div>
+                <a class="Button" type="submit">Send</a>
+            </form>
+        </div>
+    </div>
+    <!-------------------------------->
+    <!---------------Footer-------------->
+    <footer>
+        <div class="Footer">
+            <h1>DaniCofee</h1>
+            <div class="Footer-Icons">
+                <a href="https://github.com/DaniCofee" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://twitter.com/CofeeDev" target="_blank">
+                    <i class="fab fa-github-square"></i>
+                </a>
+            </div>
+            <div>
+                <p class="Mail-Footer"><a href="mailto:dannymarcano88@gmail.com">dannymarcano88@gmail.com</a></p>
+            </div>
+            <p class="CopyRight">&copy; 2020 DaniCofee All rights reserved</p>
+        </div>
+    </footer>
+    <!-- código HTMl botón subir (top)-->
+    <a href="#" id="js_up" class="boton-subir">
+        <!-- link del icono http://fontawesome.io/icon/rocket/ -->
+        <i class="fas fa-angle-up" aria-hidden="true"></i>
+    </a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+</body>
+<script>
+    //invocamos al objeto (window) y a su método (scroll), solo se ejecutara si el usuario hace scroll en la página
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1000) { //condición a cumplirse cuando el usuario aya bajado 301px a más.
+            $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+        } else { // si no
+            $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+        }
+    });
+
+    //creamos una función accediendo a la etiqueta i en su evento click
+    $("#js_up i").on('click', function(e) {
+        e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+        $("body,html").animate({ // aplicamos la función animate a los tags body y html
+            scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+        }, 700); //el valor 700 indica que lo ara en 700 mili segundos
+        return false; //rompe el bucle
+    });
+
+    $('.skill-per').each(function() {
+        var $this = $(this);
+        var per = $this.attr('per');
+        $this.css("width", per + '%');
+        $({
+            animatedValue: 0
+        }).animate({
+            animatedValue: per
+        }, {
+            duration: 1000,
+            step: function() {
+                $this.attr('per', Math.floor(this.animatedValue) + '%');
+            },
+            complete: function() {
+                $this.attr('per', Math.floor(this.animatedValue) + '%');
+            }
+        });
+    });
+
+</script>
+
+</html>

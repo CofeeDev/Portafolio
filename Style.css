@@ -1,0 +1,1566 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+/*===== VARIABLES CSS =====*/
+/*===== Colores =====*/
+:root {
+    --Primer-Color-: #3f95e6;
+    --Segundo-Color-: #172445;
+    --Font-Color-: #434343;
+}
+
+/*========================*/
+/*===== Fuente y tipografia =====*/
+:root {
+    --Titulo-: 3.5rem;
+    --Semi-Titulo-: 2rem;
+    --Normal-: 1rem;
+    --Negrita-: 600;
+}
+
+/*========================*/
+/*===== z index =====*/
+:root {
+    --z-debajotodo-: -10;
+    --z-normal-: 1;
+    --z-semi-sobretodo-: 10;
+    --z-sobretodo-: 100;
+}
+
+/*========================*/
+/*===== CLASS CSS =====*/
+/*===== Button =====*/
+.Button {
+    display: inline-block;
+    background-color: var(--Primer-Color-);
+    color: white;
+    padding: .75rem 2.5rem;
+    font-weight: var(--Negrita-);
+    border-radius: .5rem;
+    text-decoration: none;
+}
+
+.Button:hover {
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+    background: var(--Segundo-Color-);
+    transition: 0.3s;
+}
+
+/*========================*/
+/*===== Title =====*/
+.Title {
+    position: relative;
+    font-size: var(--Semi-Titulo-);
+    color: var(--Primer-Color-);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.Title:after {
+    content: '';
+    width: 5rem;
+    height: 0.3rem;
+    background: var(--Primer-Color-);
+    display: block;
+    margin: auto;
+}
+
+/*========================*/
+/*botón up*/
+.boton-subir {
+    display: none;
+    background: var(--Primer-Color-);
+    border-radius: 12px;
+    position: fixed;
+    right: 35px;
+    bottom: 23px;
+    z-index: 999999999;
+    width: 5rem;
+    height: 5rem;
+}
+
+/*evento hover*/
+.boton-subir:hover {
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
+    transition: 0.3s
+}
+
+/*estilos para el tag i*/
+.boton-subir i {
+    color: #fff;
+    font-size: 4.5em;
+    padding-left: 18px;
+}
+
+/*===== Header =====*/
+.Nav-bar {
+    width: 100%;
+    display: flex;
+    padding-left: 30px;
+    padding-top: 20px;
+    position: fixed;
+    z-index: var(--z-sobretodo-);
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+/*===== Logo =====*/
+.Logo h1 {
+    font-size: var(--Semi-Titulo-);
+    color: var(--Font-Color-);
+    font-weight: var(--Negrita-);
+    margin-top: -8px;
+    padding-bottom: 11px;
+}
+
+span {
+    color: var(--Primer-Color-);
+}
+
+/*========================*/
+/*===== Links =====*/
+.Nav-Link {
+    flex: 1;
+}
+
+.Nav-Link ul {
+    margin-left: 485px;
+    display: inline;
+}
+
+.Nav-Link ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.Nav-Link ul a {
+    color: var(--Font-Color-);
+    text-decoration: none;
+    font-size: var(--Normal-);
+    font-weight: var(--Negrita-);
+}
+
+.Nav-Link ul li:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--Primer-Color-);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.Nav-Link ul li:hover::after {
+    width: 100%;
+}
+
+.Close {
+    display: none;
+}
+
+.bars {
+    display: none;
+}
+
+/*========================*/
+/*========================*/
+/*===== Landing Page =====*/
+.Home {
+    margin-left: 1rem;
+    float: left;
+    position: relative;
+    width: 41%;
+    height: auto;
+    margin-top: 7rem;
+}
+
+/*======= Titulo ==========*/
+.Home h1 {
+    font-size: var(--Titulo-);
+    color: var(--Font-Color-);
+    margin-bottom: 3rem;
+}
+
+/*========================*/
+/*========= Img ==========*/
+.Draw {
+    margin-left: 42rem;
+    position: absolute;
+    float: right;
+    height: 31rem;
+    margin-top: 3rem;
+}
+
+/*========================*/
+/*======== Social-Icon ==========*/
+.Social-Icon {
+    padding-top: 279px;
+    padding-right: 825px;
+    margin-left: 20px;
+}
+
+.Social-Icon a {
+    text-decoration: none;
+    font-size: 50px;
+    margin: 5px;
+    text-decoration: none;
+    color: #434343;
+}
+
+.Social-Icon a:hover {
+    color: var(--Primer-Color-);
+    transition: 0.5s;
+}
+
+/*========================*/
+/*===== Acerca de mi =====*/
+.About img {
+    margin-right: 38rem;
+    position: absolute;
+    float: left;
+    height: auto;
+    margin-top: 4rem;
+    margin-left: -3rem;
+    width: 55%;
+}
+
+.Title-About {
+    position: relative;
+    font-size: var(--Semi-Titulo-);
+    color: var(--Primer-Color-);
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.Title-About:after {
+    content: '';
+    width: 5rem;
+    height: 0.3rem;
+    background: var(--Primer-Color-);
+    display: block;
+    margin: auto;
+}
+
+.About h2 {
+    color: var(--Font-Color-);
+    font-size: var(--Semi-Titulo-);
+    margin-left: 16rem;
+    margin-bottom: 2rem;
+}
+
+.About p {
+    color: var(--Font-Color-);
+    font-size: var(--Normal-);
+    font-weight: var(--Negrita-);
+    width: 80%;
+    margin-left: 7rem;
+    font-size: 1.5rem;
+}
+
+.Description {
+    margin-left: 37rem;
+    position: absolute;
+    float: right;
+    height: auto;
+    margin-top: 4rem;
+}
+
+/*========================*/
+/*========================*/
+/*===== Servicios =====*/
+/*===== Card =====*/
+.Services {
+    margin-top: 40rem;
+}
+
+.Title-Services {
+    margin-top: 5rem;
+    position: relative;
+    font-size: var(--Semi-Titulo-);
+    color: var(--Primer-Color-);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.Title-Services:after {
+    content: '';
+    width: 5rem;
+    height: 0.3rem;
+    background: var(--Primer-Color-);
+    display: block;
+    margin: auto;
+}
+
+.Content-Card {
+    position: relative;
+    align-items: center;
+    display: flex;
+    height: 23rem;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    box-sizing: border-box;
+    height: 12rem;
+    overflow: hidden;
+    transition: 0.5s;
+    width: 18rem;
+    border-radius: .5rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover {
+    height: 400px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card__top {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background: var(--Primer-Color-);
+    transition: 0.8s;
+    padding-right: 45px;
+    border-radius: .5rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card__top > h1 {
+    position: relative;
+    font-size: var(--Semi-Titulo-);
+    padding-left: 2.5rem;
+}
+
+.card__bottom {
+    box-sizing: border-box;
+    height: 13rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    padding: 1rem;
+    background: white;
+    border-radius: .5rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card__bottom > p {
+    color: #434343;
+    font-size: 16px;
+    line-height: 1.3em;
+}
+
+.Icon-Image {
+    width: 12rem;
+    margin-left: 2rem;
+}
+
+/*========================*/
+/*======= Skill ==========*/
+.Skill-Bar {
+    width: 50%;
+}
+
+.Img-Skill {
+    width: 40%;
+    margin-left: 49rem;
+    position: absolute;
+}
+
+.Text-Skill {
+    float: right;
+    width: 22rem;
+    margin-left: 61rem;
+    margin-right: 10rem;
+    margin-top: 20rem;
+    position: absolute;
+    font-size: var(--Normal-);
+    color: var(--Font-Color-);
+    font-weight: var(--Negrita-);
+}
+
+.Skill .Title {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.Title-Skill {
+    padding-left: 66rem;
+    position: absolute;
+    padding-top: 16rem;
+    font-size: var(--Semi-Titulo-);
+    color: var(--Primer-Color-);
+}
+
+.Title-Skill:after {
+    content: '';
+    width: 5rem;
+    height: 0.3rem;
+    background: var(--Primer-Color-);
+    display: block;
+    margin: auto;
+}
+
+.skills {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    margin-right: 1000px;
+    margin-top: 1000px
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+    margin-left: 75px;
+    color: #434343;
+}
+
+.skill-bar {
+    height: 10px;
+    background: #434343;
+    border-radius: 8px;
+    margin-left: 75px;
+    margin-bottom: 40px;
+}
+
+.skill-per {
+    height: 10px;
+    background-color: var(--Primer-Color-);
+    border-radius: 8px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+}
+
+.skill-per::before {
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color: #434343;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.skill-per::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #434343;
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+.skillhtml {
+    margin-top: 100px;
+}
+
+#Icon {
+    font-size: 58px;
+    position: absolute;
+    color: var(--Primer-Color-);
+    margin-left: 10px;
+}
+
+/*========================*/
+/*======= Contact ==========*/
+.contact-form {
+    width: 64%;
+    max-width: 39rem;
+    background: white;
+    position: relative;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin-left: 20rem;
+    margin-top: 45rem;
+}
+}
+
+.contact-form h1 {
+    margin-bottom: 5rem;
+    font-weight: var(--Negrita-);
+}
+
+.txtb {
+    border: 1px solid #434343;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.txtb label {
+    display: block;
+    text-align: left;
+    color: #434343;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.txtb input,
+.txtb textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.Contact-Img {
+    position: absolute;
+    width: 50%;
+    margin-left: -4rem;
+    padding-top: 9rem;
+}
+
+
+/*========================*/
+/*======= My Offer ==========*/
+.Offer {
+    margin-bottom: 20rem;
+}
+
+.Offer .Title {
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+
+.Text-Right {
+    font-size: var(--Normal-);
+    font-weight: var(--Negrita-);
+    color: var(--Font-Color-);
+    float: left;
+    margin-left: 1rem;
+    width: 40%;
+}
+
+.Text-Left {
+    font-size: var(--Normal-);
+    font-weight: var(--Negrita-);
+    color: var(--Font-Color-);
+    float: left;
+    margin-left: 2rem;
+    width: 53%;
+}
+
+
+
+
+
+/*========================*/
+/*======= Footer ==========*/
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: var(--Segundo-Color-)
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: none;
+    color: var(--Primer-Color-);
+    transition: 0.5s
+}
+
+.Footer {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 15rem;
+    margin-top: -15rem;
+}
+
+.Footer h1 {
+    text-align: center;
+    margin: 3rem;
+    padding-top: 2rem;
+    color: white;
+    font-size: var(--Semi-Titulo-);
+}
+
+.Mail-Footer {
+    font-size: var(--Normal-);
+    font-weight: var(--Negrita-);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.CopyRight {
+    color: white;
+    font-size: var(--Normal-);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.Footer-Icons {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: -1.5rem;
+}
+
+/*========================*/
+
+/*========================*/
+/*======= Responsive Mobile  ==========*/
+@media screen and (max-width: 580px) and (min-width: 0px) {
+
+    /*======= Header ==========*/
+    .Nav-Bar {
+        padding: 20px 46px;
+        position: fixed;
+    }
+
+    .bars i {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .Nav-Bar i {
+        position: absolute;
+        display: block;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        background-color: white;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .Nav-Link ul a {
+        position: absolute;
+        display: none;
+        /*========================*/
+    }
+
+    .Logo h1 {
+        padding-bottom: 0;
+    }
+
+    /*======= Landing Page ==========*/
+    .Draw {
+        display: none;
+    }
+
+    .Home h1 {
+        font-size: var(--Titulo-);
+        color: var(--Font-Color-);
+        margin-top: 1.5rem;
+        width: 28rem;
+    }
+
+    .Social-Icon a {
+        color: white;
+    }
+
+    /*========================*/
+    /*======= About ==========*/
+    .About {
+        margin-bottom: 30rem;
+        margin-top: 25rem;
+    }
+
+    .Title-About {
+        top: -11rem;
+        position: relative;
+        font-size: var(--Semi-Titulo-);
+        color: var(--Primer-Color-);
+        margin-left: -0.5rem;
+        width: 100%;
+    }
+
+    .Title-About:after {
+        content: '';
+        width: 5rem;
+        height: 0.3rem;
+        background: var(--Primer-Color-);
+        display: block;
+        margin: auto;
+    }
+
+    .About h2 {
+        color: var(--Font-Color-);
+        font-size: var(--Semi-Titulo-);
+        margin-left: 7rem;
+        width: 100%;
+        margin-top: -6rem;
+    }
+
+    .About img {
+        position: absolute;
+        float: left;
+        height: auto;
+        margin-top: -5rem;
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    .Description {
+        margin-left: 0rem;
+        position: absolute;
+        float: right;
+        height: auto;
+        margin-top: 17rem;
+        margin-bottom: 50rem;
+    }
+
+    .About p {
+        color: var(--Font-Color-);
+        font-size: var(--Normal-);
+        font-weight: var(--Negrita-);
+        margin-left: 0.5rem;
+        width: 100%
+    }
+
+    /*========================*/
+    /*======= Services ==========*/
+    .Title-Services {
+        margin-top: 29rem;
+        position: relative;
+        font-size: var(--Semi-Titulo-);
+        color: var(--Primer-Color-);
+        text-align: center;
+        width: 77%;
+        margin-left: 3.5rem;
+    }
+
+    .Title-Services:after {
+        content: '';
+        width: 5rem;
+        height: 0.3rem;
+        background: var(--Primer-Color-);
+        display: block;
+        margin: auto;
+        margin-left: 8.5rem;
+    }
+
+    .Content-Card {
+        position: relative;
+        align-items: center;
+        display: block;
+        height: 23;
+        justify-content: none;
+        margin-left: 5.5rem;
+        margin-bottom: 45rem;
+    }
+
+    .card {
+        margin-bottom: 8rem;
+    }
+
+    /*========================*/
+    /*======= Offer ==========*/
+    .Offer .Title {
+        margin-top: 10rem;
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    .Text-Left {
+        font-size: 0.8rem;
+        font-weight: var(--Negrita-);
+        color: var(--Font-Color-);
+        float: left;
+        margin-left: 0.5rem;
+        width: 54%;
+        margin-right: 0rem;
+    }
+
+    .Text-Right {
+        font-size: 0.8rem;
+        font-weight: var(--Negrita-);
+        color: var(--Font-Color-);
+        float: left;
+        margin-left: 0.5rem;
+        width: 40%;
+        margin-right: -24rem;
+    }
+
+    /*========================*/
+    /*======= Skill ==========*/
+    .Skill-Bar {
+        width: 90%;
+    }
+
+    .Img-Skill {
+        display: none;
+    }
+
+    .Text-Skill {
+        display: none;
+    }
+
+    .Skill .Title {
+        display: none;
+    }
+
+    .Title-Skill {
+        display: none;
+    }
+
+    .Title-Skill:after {
+        display: none;
+    }
+
+    /*========================*/
+    /*======= Contact ==========*/
+    .contact-form {
+        width: 100%;
+        margin-top: 52rem;
+        margin-left: 14rem;
+    }
+
+    .Contact-Img {
+        display: none;
+    }
+
+    /*========================*/
+    /*======= Footer ==========*/
+    footer {
+        width: 100%;
+    }
+}
+
+/*========================*/
+/*======= Responsive Tablet ==========*/
+@media screen and (max-width: 800px) and (min-width: 600px) {
+    .Home {
+        margin-left: 1rem;
+        float: left;
+        position: relative;
+        width: 49%;
+        height: auto;
+        margin-top: 6rem;
+    }
+
+    .Home h1 {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .Draw {
+        margin-left: 21rem;
+        position: absolute;
+        float: right;
+        height: 19rem;
+        margin-top: 4rem;
+    }
+
+    .Nav-Link ul li {
+        list-style: none;
+        display: inline-block;
+        padding-left: 14px;
+    }
+
+    .Description {
+        margin-left: 3rem;
+        position: absolute;
+        float: right;
+        height: auto;
+        margin-top: 17rem;
+    }
+
+    .About img {
+        margin-right: 25rem;
+        position: absolute;
+        float: left;
+        height: auto;
+        margin-top: 4rem;
+        margin-left: 10rem;
+        width: 55%;
+    }
+
+    .About h2 {
+        color: var(--Font-Color-);
+        font-size: var(--Semi-Titulo-);
+        margin-left: 15rem;
+    }
+
+    .Title-Services {
+        margin-top: 35rem;
+    }
+
+    .card__top > h1 {
+        position: relative;
+        font-size: var(--Semi-Titulo-);
+        margin-right: 3rem;
+    }
+
+
+    .Icon-Image {
+        width: 10rem;
+        margin-left: -1rem;
+    }
+
+    .card {
+        position: relative;
+        box-sizing: border-box;
+        height: 12rem;
+        overflow: hidden;
+        transition: 0.5s;
+        width: 15rem;
+        border-radius: .5rem;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .card__bottom > p {
+        width: 87%;
+    }
+
+    .Text-Skill {
+        float: right;
+        width: 22rem;
+        margin-left: 25rem;
+        margin-right: 10rem;
+        margin-top: 16rem;
+        position: absolute;
+        font-size: var(--Normal-);
+        color: var(--Font-Color-);
+        font-weight: var(--Negrita-);
+    }
+
+    .Title-Skill {
+        padding-left: 31rem;
+        position: absolute;
+        padding-top: 11rem;
+        font-size: var(--Semi-Titulo-);
+        color: var(--Primer-Color-);
+    }
+
+    .Img-Skill {
+        width: 40%;
+        margin-left: 28rem;
+        position: absolute;
+    }
+
+    .Skill-Bar {
+        width: 50%;
+    }
+
+    .Contact-Img {
+        position: absolute;
+        width: 50%;
+        margin-left: -24rem;
+        padding-top: 17rem;
+    }
+
+    .contact-form {
+        width: 50%;
+        max-width: 35rem;
+        background: white;
+        position: relative;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        border-radius: .5rem;
+        text-align: center;
+        padding: 1rem 2rem;
+        margin-left: 11rem;
+        margin-top: 45rem;
+    }
+
+    .Nav-Link ul {
+        margin-left: 28px;
+        display: none;
+    }
+
+    .Social-Icon a {
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======= Laptop  ==========*/
+/*======= Laptop  ==========*/
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+
+    .Nav-Link ul {
+        margin-left: 183px;
+        display: inline;
+    }
+
+    /*===== Header =====*/
+    .Nav-bar {
+        width: 100%;
+        display: flex;
+        padding-left: 30px;
+        padding-top: 20px;
+        position: fixed;
+        z-index: var(--z-sobretodo-);
+        background-color: white;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /*===== Logo =====*/
+    .Logo h1 {
+        font-size: var(--Semi-Titulo-);
+        color: var(--Font-Color-);
+        font-weight: var(--Negrita-);
+        margin-top: -8px;
+        padding-bottom: 11px;
+    }
+
+    span {
+        color: var(--Primer-Color-);
+    }
+
+    /*========================*/
+    /*===== Links =====*/
+    .Nav-Link {
+        flex: 1;
+    }
+
+    .Nav-Link ul {
+        margin-left: 150px;
+        display: inline;
+    }
+
+    .Nav-Link ul li {
+        list-style: none;
+        display: inline-block;
+        padding-left: 30px;
+    }
+
+    .Nav-Link ul a {
+        color: var(--Font-Color-);
+        text-decoration: none;
+        font-size: var(--Normal-);
+        font-weight: var(--Negrita-);
+    }
+
+    .Nav-Link ul li:after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background: var(--Primer-Color-);
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    .Nav-Link ul li:hover::after {
+        width: 100%;
+    }
+
+    .Close {
+        display: none;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    /*========================*/
+    /*========================*/
+    /*===== Landing Page =====*/
+    .Home {
+        margin-left: 1rem;
+        float: left;
+        position: relative;
+        width: 41%;
+        height: auto;
+        margin-top: 4rem;
+    }
+
+    /*======= Titulo ==========*/
+    .Home h1 {
+        font-size: var(--Titulo-);
+        color: var(--Font-Color-);
+        margin-bottom: 3rem;
+    }
+
+    /*========================*/
+    /*========= Img ==========*/
+    .Draw {
+        margin-left: 27rem;
+        position: absolute;
+        float: right;
+        height: 26rem;
+        margin-top: 3rem;
+    }
+
+    /*========================*/
+    /*======== Social-Icon ==========*/
+    .Social-Icon {
+        padding-top: 279px;
+        padding-right: 825px;
+        margin-left: 20px;
+    }
+
+    .Social-Icon a {
+        text-decoration: none;
+        font-size: 30px;
+        margin: 5px;
+        text-decoration: none;
+        color: #434343;
+    }
+
+    /*========================*/
+    /*===== Acerca de mi =====*/
+    .About img {
+        margin-right: 38rem;
+        position: absolute;
+        float: left;
+        height: auto;
+        margin-top: 4rem;
+        margin-left: -3rem;
+        width: 55%;
+    }
+
+    .Title-About {
+        margin-top: 5rem;
+        position: relative;
+        font-size: var(--Semi-Titulo-);
+        color: var(--Primer-Color-);
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .Title-About:after {
+        content: '';
+        width: 5rem;
+        height: 0.3rem;
+        background: var(--Primer-Color-);
+        display: block;
+        margin: auto;
+    }
+
+    .About h2 {
+        color: var(--Font-Color-);
+        font-size: var(--Semi-Titulo-);
+        margin-left: 8rem;
+    }
+
+    .About p {
+        color: var(--Font-Color-);
+        font-size: var(--Normal-);
+        font-weight: var(--Negrita-);
+        margin-top: 1rem;
+    }
+
+    .Description {
+        margin-left: 30rem;
+        position: absolute;
+        float: right;
+        height: auto;
+        margin-top: 4rem;
+    }
+
+    /*========================*/
+    /*========================*/
+    /*===== Servicios =====*/
+    /*===== Card =====*/
+    .Services {
+        margin-top: 28rem;
+    }
+
+    .Title-Services {
+        margin-top: 5rem;
+        position: relative;
+        font-size: var(--Semi-Titulo-);
+        color: var(--Primer-Color-);
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .Title-Services:after {
+        content: '';
+        width: 5rem;
+        height: 0.3rem;
+        background: var(--Primer-Color-);
+        display: block;
+        margin: auto;
+    }
+
+    .Content-Card {
+        position: relative;
+        align-items: center;
+        display: flex;
+        height: 23rem;
+        justify-content: space-between;
+    }
+
+    .card {
+        position: relative;
+        box-sizing: border-box;
+        height: 12rem;
+        overflow: hidden;
+        transition: 0.5s;
+        width: 18rem;
+        border-radius: .5rem;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .card:hover {
+        height: 400px;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .card__top {
+        position: relative;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+        height: 200px;
+        width: 300px;
+        background: var(--Primer-Color-);
+        transition: 0.8s;
+        padding-right: 45px;
+        border-radius: .5rem;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .card__top > h1 {
+        position: relative;
+        font-size: var(--Semi-Titulo-);
+        padding-left: 2.5rem;
+    }
+
+    .card__bottom {
+        box-sizing: border-box;
+        height: 13rem;
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: left;
+        padding: 1rem;
+        background: white;
+        border-radius: .5rem;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .card__bottom > p {
+        color: #434343;
+        font-size: 16px;
+        line-height: 1.3em;
+    }
+
+    .Icon-Image {
+        width: 12rem;
+        margin-left: 2rem;
+    }
+
+    /*========================*/
+    /*======= Skill ==========*/
+
+    .Img-Skill {
+        width: 40%;
+        margin-left: 34rem;
+        position: absolute;
+    }
+
+    .Text-Skill {
+        float: right;
+        width: 22rem;
+        margin-left: 36rem;
+        margin-right: 10rem;
+        margin-top: 20rem;
+        position: absolute;
+        font-size: var(--Normal-);
+        color: var(--Font-Color-);
+        font-weight: var(--Negrita-);
+    }
+
+    .Skill .Title {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    .Title-Skill {
+        padding-left: 41rem;
+        position: absolute;
+        padding-top: 16rem;
+        font-size: var(--Semi-Titulo-);
+        color: var(--Primer-Color-);
+    }
+
+    .Title-Skill:after {
+        content: '';
+        width: 5rem;
+        height: 0.3rem;
+        background: var(--Primer-Color-);
+        display: block;
+        margin: auto;
+    }
+
+    .skills {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 20px;
+        margin-right: 1000px;
+        margin-top: 1000px
+    }
+
+    .skill-name {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 20px 0;
+        margin-left: 75px;
+        color: #434343;
+    }
+
+    .skill-bar {
+        height: 10px;
+        background: #434343;
+        border-radius: 8px;
+        margin-left: 75px;
+        margin-bottom: 40px;
+    }
+
+    .skill-per {
+        height: 10px;
+        background-color: var(--Primer-Color-);
+        border-radius: 8px;
+        width: 0;
+        transition: 1s linear;
+        position: relative;
+    }
+
+    .skill-per::before {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background-color: #434343;
+        color: white;
+        font-size: 12px;
+        border-radius: 4px;
+        top: -35px;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    .skill-per::after {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #434343;
+        top: -16px;
+        right: 0;
+        transform: translateX(50%) rotate(45deg);
+        border-radius: 2px;
+    }
+
+    .skillhtml {
+        margin-top: 100px;
+    }
+
+    #Icon {
+        font-size: 58px;
+        position: absolute;
+        color: var(--Primer-Color-);
+        margin-left: 10px;
+    }
+
+    /*========================*/
+    /*======= Contact ==========*/
+    .contact-form {
+        width: 50%;
+        max-width: 35rem;
+        background: white;
+        position: relative;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        border-radius: .5rem;
+        text-align: center;
+        padding: 1rem 2rem;
+        margin-left: 16rem;
+        margin-top: 45rem;
+    }
+
+    .contact-form h1 {
+        margin-top: 0;
+        font-weight: var(--Negrita-);
+    }
+
+    .txtb {
+        border: 1px solid #434343;
+        margin: 8px 0;
+        padding: 12px 18px;
+        border-radius: 8px;
+    }
+
+    .txtb label {
+        display: block;
+        text-align: left;
+        color: #434343;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .txtb input,
+    .txtb textarea {
+        width: 100%;
+        border: none;
+        background: none;
+        outline: none;
+        font-size: 18px;
+        margin-top: 6px;
+    }
+
+    .Contact-Img {
+        position: absolute;
+        width: 50%;
+        margin-left: -31rem;
+        padding-top: 14rem;
+    }
+
+    /*========================*/
+    /*======= My Offer ==========*/
+    .Offer {
+        margin-bottom: 20rem;
+    }
+
+    .Offer .Title {
+        margin-top: 10rem;
+        margin-bottom: 3rem;
+    }
+
+
+    .Text-Right {
+        font-size: var(--Normal-);
+        font-weight: var(--Negrita-);
+        color: var(--Font-Color-);
+        float: left;
+        margin-left: 1rem;
+        width: 40%;
+    }
+
+    .Text-Left {
+        font-size: var(--Normal-);
+        font-weight: var(--Negrita-);
+        color: var(--Font-Color-);
+        float: left;
+        margin-left: 2rem;
+        width: 53%;
+    }
+
+
+
+
+
+    /*========================*/
+    /*======= Footer ==========*/
+
+    footer {
+        position: relative;
+        bottom: 0;
+        background-color: var(--Segundo-Color-)
+    }
+
+    footer a {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    footer a:hover {
+        color: white;
+        text-decoration: none;
+        color: var(--Primer-Color-);
+    }
+
+    .Footer {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 15rem;
+        margin-top: -15rem;
+    }
+
+    .Footer h1 {
+        text-align: center;
+        margin: 3rem;
+        padding-top: 2rem;
+        color: white;
+        font-size: var(--Semi-Titulo-);
+    }
+
+    .Mail-Footer {
+        font-size: var(--Normal-);
+        font-weight: var(--Negrita-);
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .CopyRight {
+        color: white;
+        font-size: var(--Normal-);
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+    .Footer-Icons {
+        text-align: center;
+        font-size: 3rem;
+        margin-top: -1.5rem;
+    }
+}
